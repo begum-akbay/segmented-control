@@ -35,6 +35,7 @@ const SegmentedControl = ({
   fontStyle,
   activeFontStyle,
   appearance,
+  sliderStyle
 }: SegmentedControlProps): React.Node => {
   const colorSchemeHook = useColorScheme();
   const colorScheme = appearance || colorSchemeHook;
@@ -121,6 +122,7 @@ const SegmentedControl = ({
               backgroundColor:
                 tintColor || (colorScheme === 'dark' ? '#636366' : 'white'),
             },
+            sliderStyle
           ]}
         />
       ) : null}
